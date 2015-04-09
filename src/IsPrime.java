@@ -18,7 +18,15 @@ public class IsPrime {
 	}
 
 	public static boolean isPrime(int input) {
-		if (input % 2 == 0) {
+		if (input < 2) {
+			return false;
+		}
+
+		if (input == 2 || input == 3) {
+			return true;
+		}
+
+		if (input % 2 == 0 || input % 3 == 0) {
 			return false;
 		}
 
@@ -27,6 +35,7 @@ public class IsPrime {
 				return false;
 			}
 		}
+
 		return true;
 	}
 }
