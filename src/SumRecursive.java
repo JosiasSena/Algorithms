@@ -13,6 +13,7 @@ public class SumRecursive {
 			return 0;
 		} else {
 			return nums[length] + sum(nums, length - 1);
+			// to multiply recursively just change the '+' to '*'
 		}
 	}
 }
