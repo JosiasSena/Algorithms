@@ -10,9 +10,7 @@ public class FactorialRecursive {
 
 		System.out.print("Enter a number to get the factorial of: ");
 		number = scanner.nextInt();
-		System.out
-				.println("The factorial of " + number + " is " + fact(number));
-
+		System.out.println("The factorial of " + number + " is " + fact(number));
 	}
 
 	static int fact(int number) {
